@@ -1,29 +1,55 @@
 
 /*STYLING FOR NUMBERS */
 
+.container{
+  width: 80%;
+  margin: auto;
+}
+
 .app {
-  width: 60%;
-  height: 100%;
-  margin-left: 5rem;
-  margin-top: 3rem;
+  height: 40px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  color:#fff;
+  grid-template-columns: repeat(4, 1fr);
+  color:black;
+  background-color: grey;
+}
+
+.app-3 {
+  height: 40px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  color:black;
+  background-color: grey;
+}
+
+.app-2{
+  height: 60px;
+  color:black;
   border-right: 2px solid  grey;
   background-color: grey;
 }
+
 .cal-style {
   text-align: center;
   background-color: silver;
   border-right: 2px solid grey;
   border-bottom: 2px solid grey;
-  font-size: 3rem;
+  font-size: 2rem;
+}
+
+.table-cal-style {
+  text-align: center;
+  background-color: silver;
+  font-size: 2rem;
+  padding: 10px;
+  width: 25%;
 }
 
 .operand-style {
-  display: flex; 
-  flex-direction: column;
-  align-items: flex-end;
-  text-align: center;
+  /*display: flex; */
+  /*flex-direction: column;*/
+  /*align-items: flex-end;*/
+  /*text-align: center;*/
   background-color: orange;
+  color: white;
 }

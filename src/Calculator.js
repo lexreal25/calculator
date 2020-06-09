@@ -1,15 +1,24 @@
 import React from 'react';
 import './App.css'
 
-class Calculator extends React.Component{
-    render(){
-        
-        const elements = ['AC','+/-','%','7','8','9','4','5','6','1','2','3','0','.'];
-        return(
-                elements.map((numbers) => <div className="cal-style">{numbers}</div>
+class Calculator extends React.Component {
+
+  render() {
+
+    return (
+      <>
+        {
+          this.props.elements.map((number, index) => (
+              <div key={index}
+                   className={`cal-style ${number.type === "operand" ? 'operand-style' : ''}`}>
+                {number.value}
+              </div>
             )
-        )
-    }
+          )
+        }
+      </>
+    )
+  }
 }
 
 export default Calculator;
